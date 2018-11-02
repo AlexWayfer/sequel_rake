@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
 	spec.required_ruby_version = '~> 2.3'
 
-	spec.add_runtime_dependency 'rake_helper_methods', '~> 0.0'
+	spec.add_runtime_dependency 'rake_helpers', '~> 0.0'
 	spec.add_runtime_dependency 'sequel', '~> 5.0'
 
 	spec.add_development_dependency 'rubocop', '~> 0.59.2'

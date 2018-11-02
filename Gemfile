@@ -4,4 +4,4 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rake_helper_methods', path: '../rake_helper_methods'
+gem 'rake_helpers', github: 'AlexWayfer/rake_helpers'

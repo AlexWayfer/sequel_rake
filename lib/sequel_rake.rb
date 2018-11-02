@@ -3,13 +3,13 @@
 require 'logger'
 require 'sequel'
 require 'fileutils'
-require 'rake_helper_methods'
+require 'rake_helpers'
 
 require_relative 'sequel_rake/migration_file'
 
 class SequelRake
 	include Rake::DSL
-	include RakeHelperMethods
+	include RakeHelpers
 
 	def initialize(
 		db_connection,
