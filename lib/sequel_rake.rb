@@ -115,9 +115,9 @@ class SequelRake
 
 		file = @migration_file_class.find('*', only_one: false)[-1 - step]
 
-		Rake::Task['db:migrations:run'].invoke(file.version)
+		Rake::Task['db:migrations:run'].invoke(file ? file.version : '0')
 
-		puts "Rolled back to #{file.basename}"
+		puts "Rolled back to #{file ? file.basename : 'start'}"
 	end
 
 	def create(args)
