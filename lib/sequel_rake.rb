@@ -113,7 +113,9 @@ class SequelRake
 
 		step = Integer(args[:step]).abs
 
-		file = @migration_file_class.find('*', only_one: false)[-1 - step]
+		file = @migration_file_class.find(
+			'*', disabled: false, only_one: false
+		)[-1 - step]
 
 		Rake::Task['db:migrations:run'].invoke(file ? file.version : '0')
 
