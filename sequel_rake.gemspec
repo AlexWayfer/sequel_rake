@@ -16,5 +16,5 @@ Gem::Specification.new do |spec|
 	spec.add_runtime_dependency 'rake_helpers', '~> 0.0'
 	spec.add_runtime_dependency 'sequel', '~> 5.0'
 
-	spec.add_development_dependency 'rubocop', '~> 0.59.2'
+	spec.add_development_dependency 'rubocop', '~> 0.88.0'
 end
